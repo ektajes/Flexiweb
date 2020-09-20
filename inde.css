@@ -1,0 +1,296 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  
+  
+}
+
+h1,h2,h3,h4{
+  margin-bottom:1rem;
+}
+p{
+  margin-bottom:10px;
+}
+.navbar{
+  display: flex;
+  justify-content:space-between;
+  padding:1rem;
+  position:fixed;
+  width:100%;
+  background:#333;
+  opacity:0.8;
+  align-items: center;
+color:#fff;
+font-family: 'Ranchers', cursive;
+}
+.navbar ul{
+  list-style:none;
+}
+.navbar ul{
+  display: flex;
+  flex-direction:row;
+ 
+}
+.navbar ul li a{
+  color:#fff;
+  padding:0 0.75em;
+  text-decoration: none;
+}
+span{
+  color:green;
+}
+
+
+.navbar .logo{
+  text-align: center;
+}
+h2, h1{
+  font-weight:bold;
+}
+
+.hero{
+  background: url('./images/blog3.jpeg') no-repeat center center/cover;
+  position:relative;
+  height:100vh;
+}
+
+.hero:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background:rgba(46, 42, 40, 0.7);
+}
+
+.hero .content{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+}
+.hero .content p{
+  max-width: 600px;
+  margin-bottom:15px;
+}
+
+.hero *{
+  z-index:10;
+}
+
+.hero h2{
+ 
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.btn{
+  display:inline-block;
+  background:#333;
+  color:#fff;
+  padding:0.75rem;
+  border-radius:5px;
+}
+
+a.btn{
+  text-decoration: none;
+}
+
+.dark{
+  color:darkgoldenrod;
+
+}
+
+.flex-items{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  text-align:center;
+}
+
+#icons i{
+  
+    color:#fff;
+    background:green;
+    border-radius: 50%;
+  padding:5px;
+  text-align:center;
+  margin-bottom: 10px;
+  
+}
+.flex-items> *{
+padding:20px;
+}
+
+.flex-items h3, .flex-items i{
+  text-align:center;
+}
+
+.flex-columns .row{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  flex-wrap:wrap;
+}
+
+.flex-columns .row .column{
+  display:flex;
+  flex-direction: column;
+  flex-basis:100%;
+  flex:1;
+}
+
+.flex-columns .column .column1,
+.flex-columns .column .column2{
+  height:100%;
+}
+
+#about img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.flex-columns .column .column2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  padding:20px;
+}
+
+.btn-secondary{
+  background:green;
+  color:#fff;
+  opacity:0.8;
+}
+
+.bg-light{
+  background: gray;
+}
+
+#solutions img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+ .flex-columns.flex-reverses .row{
+  flex-direction: row-reverse;
+}
+#contact img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+.callback-form{
+  width:100%;
+}
+
+.callback-form label{
+  display:inline-block;
+  
+}
+.callback-form input{
+  width:100%;
+  padding:5px;
+}
+.callback-form input[type='submit']{
+  margin-top:10px;
+  
+  border-radius:5px;
+}
+#contact h3{
+  font-size: 25px;
+}
+
+#team img{
+  border-radius:50%;
+  width:300px;
+}
+.section-header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-between;
+}
+.section-padding{
+  padding:20px;
+}
+.section-header img{
+display:inline-block;
+margin:5px auto;
+width:300px;
+height:300px;
+}
+.bg-cream{
+  background:tan;
+}
+.flex-grid .row{
+  display: flex;
+  width:100%;
+  flex-wrap:wrap;
+flex-direction: row;
+}
+
+.flex-grid .column{
+ display:flex;
+ flex-direction: column;
+ padding:0 4px;
+  flex:25%;
+  max-width:25%;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  background:#333;
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+
+#footer .social >*{
+margin-right:5px;
+}
+
+@media(max-width:768px){
+  .navbar{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .hero{
+    padding:5px;
+  }
+  .flex-items{
+    flex-direction: column;
+  }
+  .flex-columns .row{
+    flex-direction: column;
+  }
+  .flex-columns.flex-reverses .row{
+    flex-direction: column-reverse;
+
+  }
+  .flex-grid .column{
+    flex:100%;
+    max-width: 100%;
+    
+  }
+  .flex-grid img{
+    height:300px;
+  }
+}
